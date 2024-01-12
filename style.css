@@ -1,0 +1,89 @@
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: wheat;
+    padding: 30px;
+}
+
+.container{
+background-color: white;
+width: 420px;
+max-width: 80%;
+padding: 30px;
+position: relative;
+border-bottom-right-radius: 150px;
+}
+input{
+    width: 50px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid whitesmoke;
+    outline: none;
+}
+input:focus{
+    border: 2px solid purple;
+}
+small{
+    color: red;
+    font-weight: 0.6rem;
+    font-size: bold;
+    text-transform: capitalize;
+}
+.submit-btn{
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+    display: flex;
+    background-color: purple;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    right: 30px;
+    top: 60px;
+    cursor: pointer;
+
+}
+.submit-btn:hover{
+background-color: black;
+}
+.output span{
+    font-size: 2.75rem;
+    color: purple;
+    font-style: italic;
+}
+.input-container{
+    display: flex;
+    flex-direction: flex;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.input-flex{
+    display: flex;
+    border-bottom: 2px solid whitesmoke;
+    margin-bottom: 20px;
+}
+@media (max-width:768px) {
+    input {
+        width: 80%;
+    }
+    .output span {
+        font-size: 1.75rem;
+    }
+    .submit-btn {
+        width: 40px;
+        height: 40px;
+        right: 40%;
+        top: 90px;
+    }
+    .submit-btn img {
+        transform: scale(0.5);
+    }
+}
